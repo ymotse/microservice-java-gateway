@@ -9,6 +9,9 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
 import br.com.ymotse.api.filters.ErrorFilter;
+import br.com.ymotse.api.filters.PostFilter;
+import br.com.ymotse.api.filters.PreFilter;
+import br.com.ymotse.api.filters.RouterFilter;
 
 /**
  * 
@@ -30,6 +33,21 @@ public class MicroserviceJavaGatewayApplication {
 	@Bean
 	public ErrorFilter errorFilter() {
 		return errorFilter();
+	}
+	
+	@Bean
+	public PreFilter preFilter() {
+		return preFilter();
+	}
+	
+	@Bean
+	public PostFilter postFilter() {
+		return postFilter();
+	}
+	
+	@Bean
+	public RouterFilter routerFilter() {
+		return routerFilter();
 	}
 	
 }
