@@ -17,6 +17,7 @@ eureka:
     leaseExpirationDurationInSeconds: 2
 
 spring:
+  cloud:    loadbalancer:      ribbon:        enabled: false
   application: 
     name: microservice-java-gateway
 
@@ -26,6 +27,7 @@ ribbon:
 
 zuul:
   sensitive-headers: 
+  - 
   routes:
     users:
       service-id: microservice-java-service-users
