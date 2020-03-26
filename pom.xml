@@ -68,7 +68,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>br.com.ymotse.api.MicroserviceJavaGatewayApplication</mainClass>
+					<mainClass>br.com.ymotse.api.MicroserviceJavaGateway</mainClass>
 					<addResources>true</addResources>
 				</configuration>
 				<executions>

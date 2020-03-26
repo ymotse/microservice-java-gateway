@@ -25,4 +25,9 @@ ribbon:
     enabled: true
 
 zuul:
-  prefix: /api
+  sensitive-headers: 
+  routes:
+    users:
+      service-id: microservice-java-service-users
+      path: /users/**
+
